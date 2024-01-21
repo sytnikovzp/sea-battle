@@ -3,18 +3,17 @@
 }
 
 .grid {
-  border: 5px solid blue;
+  border: 5px solid black;
   display: grid;
   width: 500px;
   height: 500px;
   margin: auto;
   grid-template-columns: repeat(10,1fr);
   grid-template-rows: repeat(10,1fr);
-
   grid-template-areas: 
     'a a . e . . i i i i'
     '. . . e . . . . . .'
-    'h . . e . b b b . d'
+    'h . . e . f f f . d'
     'h . . . . . . . . d'
     'h . . . . . . . . .'
     'h . . . . c . . . g'
@@ -26,11 +25,7 @@
 }
 
 .grid-item{
-  outline: 2px solid black;
-  font-size: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid black;
 }
 
 .grid-item:nth-child(1){
